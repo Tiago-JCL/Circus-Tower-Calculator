@@ -4,5 +4,5 @@
 ## Using
  It'll use customtkinter for the interface, the focus is for making something like this:
 
-<img src="./imgs/tela_menu.png" alt="Menu">
-<img src="./imgs/tela_lua.png" alt="Moon">
+<img src="./imgs/tela_menu.png" alt="Menu" width = 250px>
+<img src="./imgs/tela_lua.png" alt="Moon" width = 250px>
