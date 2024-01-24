@@ -4,5 +4,5 @@
 ## Using
  It'll use customtkinter for the interface, the focus is for making something like this:
 
-![Menu](./imgs/tela_menu.png)
-![Lua](./imgs/tela_lua.png)
+<img src="./imgs/tela_menu.png" alt="Menu">
+<img src="./imgs/tela_lua.png" alt="Moon">
