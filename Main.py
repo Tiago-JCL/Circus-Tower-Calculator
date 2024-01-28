@@ -62,12 +62,17 @@ class App(customtkinter.CTk):
         self.maintab_label.pack()
         if hasattr(self, "characters_label"):  # Check if label exists before hiding
             self.characters_label.pack_forget()
+            self.amogus.pack_forget()
         if hasattr(self, "configs_label"):
             self.configs_label.pack_forget()
 
     def show_characters(self):
         self.characters_label = customtkinter.CTkLabel(self.central_frame, text="Characters content here")
+        self.among = customtkinter.CTkImage(light_image=Image.open("./imgs/amogu.png"),dark_image=Image.open("./imgs/amogu.png"),
+                                            size=(400,400))
+        self.amogus = customtkinter.CTkLabel(self.central_frame,text="",image=self.among)
         self.characters_label.pack()
+        self.amogus.pack(pady=(10, 10))
         self.maintab_label.pack_forget()
         if hasattr(self, "configs_label"):
             self.configs_label.pack_forget()
@@ -78,6 +83,7 @@ class App(customtkinter.CTk):
         self.maintab_label.pack_forget()
         if hasattr(self, "characters_label"):
             self.characters_label.pack_forget()
+            self.amogus.pack_forget()
 
     def animate_gif(self):
         self.pory_label.configure(image=self.pory_images[self.current_frame])
